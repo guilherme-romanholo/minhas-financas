@@ -8,8 +8,9 @@ import javafx.scene.control.TextField
 import org.example.controllers.LoginController
 import tornadofx.*
 
-class LoginView : View() {
+class LoginView : View("Login") {
     override val root: Parent by fxml("/fxml/login-view.fxml")
+
     private val controller: LoginController by inject()
 
     @FXML
@@ -18,10 +19,15 @@ class LoginView : View() {
     private lateinit var usernameField: TextField
     @FXML
     private lateinit var signInButton: Button
+    @FXML
+    private lateinit var signUpButton: Button
 
     init {
         signInButton.setOnAction {
             controller.verifyLoginInfos(usernameField.text, passwordField.text)
+        }
+        signUpButton.setOnAction {
+            replaceWith(RegisterView::class)
         }
     }
 }

@@ -1,0 +1,54 @@
+.register-field {
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-width: 0;
+    -fx-prompt-text-fill: #9c9898;
+    -fx-font-size: 14px;
+}
+
+#backLoginButton {
+    -fx-background-color: transparent;
+}
+
+#backLoginButton:hover {
+    -fx-cursor: hand;
+}
+
+#registerPanel {
+    -fx-background-color: #d9d9d9;
+}
+
+#registerButton {
+    -fx-background-color: #008562;
+    -fx-border-width: 0;
+    -fx-background-radius: 10px;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+#registerButton:hover {
+    -fx-background-color: #339D81;
+    -fx-cursor: hand;
+}
+
+#registerButton:pressed {
+    -fx-background-color: #008562;
+}
+
+#registerTitle {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #008562;
+}
+
+#registerSubTitle {
+    -fx-font-weight: bold;
+}
+
+#errorLabel {
+    -fx-font-weight: bold;
+    -fx-text-fill: red;
+}
+
