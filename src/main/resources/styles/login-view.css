@@ -1,0 +1,63 @@
+/* Panel */
+#loginPanel {
+    -fx-background-color: #d9d9d9;
+}
+
+/* Fields */
+.my-field {
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-width: 0;
+    -fx-prompt-text-fill: #9c9898;
+    -fx-font-size: 14px;
+}
+
+/* Buttons */
+#signInButton {
+    -fx-background-color: #008562;
+    -fx-border-width: 0;
+    -fx-background-radius: 10px;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+#signUpButton {
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #008562;
+    -fx-underline: true;
+}
+
+#signInButton:hover {
+    -fx-background-color: #339D81;
+    -fx-cursor: hand;
+}
+
+#signUpButton:hover {
+    -fx-cursor: hand;
+    -fx-text-fill: #339D81;
+}
+
+#signInButton:pressed {
+    -fx-background-color: #008562;
+}
+
+#signUpButton:pressed {
+    -fx-text-fill: #008562;
+}
+
+/* Labels */
+#signUpLabel {
+    -fx-text-fill: #1e1919;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#errorLabel {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}

@@ -1,7 +1,6 @@
 package org.example
 
-import org.example.styles.HelloStyle
-import org.example.views.HelloView
+import org.example.views.LoginView
 import tornadofx.App
 
-class MyApp : App(HelloView::class, HelloStyle::class)
+class MyApp : App(LoginView::class)
