@@ -7,13 +7,15 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
 
 <AnchorPane fx:id="registerPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="340.0" stylesheets="@../styles/register-view.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="40.0" layoutX="53.0" layoutY="130.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="235.0" />
    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="40.0" layoutX="53.0" layoutY="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="235.0" />
    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="40.0" layoutX="53.0" layoutY="230.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="235.0" />
-   <Label fx:id="errorLabel" layoutX="73.0" layoutY="361.0" text="Invalid username/password!" visible="false" />
    <Label fx:id="registerTitle" layoutX="89.0" layoutY="62.0" text="Create Account" />
    <Label fx:id="registerSubTitle" layoutX="95.0" layoutY="94.0" text="Create a new account" />
    <Button fx:id="backLoginButton" mnemonicParsing="false" prefHeight="51.0" prefWidth="60.0">
@@ -36,5 +38,13 @@
    <ImageView layoutX="40.0" layoutY="223.0">
       <Image url="@../images/passIcon.png" />
    </ImageView>
-   <Label layoutX="76.0" layoutY="331.0" text="Invalid informations, try again!" visible="false" />
+   <StackPane layoutX="66.0" layoutY="351.0" prefHeight="38.0" prefWidth="200.0">
+      <Group>
+         <Label fx:id="errorLabel" text="Texto de erro longo que precisa ser centralizado e ajustado para caber no espaço disponível." textAlignment="CENTER" visible="false" wrapText="true">
+            <padding>
+               <Insets top="5" right="10" bottom="5" left="10" />
+            </padding>
+         </Label>
+      </Group>
+   </StackPane>
 </AnchorPane>

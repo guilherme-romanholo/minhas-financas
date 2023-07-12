@@ -10,4 +10,8 @@ class UserDTO(id: EntityID<Int>) : IntEntity(id) {
 
     var username by UserTable.username
     var password by UserTable.password
+
+    fun getId(): Int {
+        return this.id.value
+    }
 }

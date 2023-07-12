@@ -3,6 +3,7 @@ package org.example.views
 import javafx.fxml.FXML
 import javafx.scene.Parent
 import javafx.scene.control.Button
+import javafx.scene.control.Label
 import javafx.scene.control.PasswordField
 import javafx.scene.control.TextField
 import org.example.controllers.LoginController
@@ -21,10 +22,15 @@ class LoginView : View("Login") {
     private lateinit var signInButton: Button
     @FXML
     private lateinit var signUpButton: Button
+    @FXML
+    private lateinit var errorLabel: Label
 
     init {
         signInButton.setOnAction {
-            controller.verifyLoginInfos(usernameField.text, passwordField.text)
+            val id = controller.verifyLoginInfos(usernameField.text, passwordField.text, errorLabel)
+            if (id != -1) {
+                replaceWith(MainView(id), sizeToScene = true)
+            }
         }
         signUpButton.setOnAction {
             replaceWith(RegisterView::class)
