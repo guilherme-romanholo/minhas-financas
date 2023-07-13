@@ -1,10 +1,19 @@
 package org.example.views
 
+import javafx.fxml.FXML
+import javafx.scene.Parent
+import javafx.scene.control.Label
+import org.example.models.dao.UserDAO
+import org.example.models.dto.UserDTO
 import tornadofx.*
 
-class MainView(private val userId: Int) : View("My View") {
-    override val root = anchorpane {
-        setPrefSize(1200.0, 800.0)
-        label("Welcome, $userId")
+class MainView(userDTO: UserDTO) : View("Main") {
+    override val root: Parent by fxml("/fxml/main-view.fxml")
+
+    @FXML
+    private lateinit var usernameLabel: Label
+
+    init {
+        usernameLabel.text = userDTO.username
     }
 }

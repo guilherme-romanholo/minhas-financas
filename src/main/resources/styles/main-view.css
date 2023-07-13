@@ -1,0 +1,18 @@
+#mainPanel {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgba(11,171,100,1), rgba(5,93,78,1));
+}
+
+#dashboard {
+    -fx-background-color: #d9d9d9;
+    -fx-background-radius: 10px;
+}
+
+#usernameLabel {
+    -fx-font-weight: bold;
+    -fx-text-fill: #008562;
+    -fx-font-size: 16px;
+}
+
+.dash-card {
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, rgba(11,171,100,1), rgba(5,93,78,1));
+}

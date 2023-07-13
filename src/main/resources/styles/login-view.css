@@ -1,6 +1,6 @@
 /* Panel */
 #loginPanel {
-    -fx-background-color: #d9d9d9;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgba(11,171,100,1), rgba(5,93,78,1));
 }
 
 /* Fields */
@@ -15,7 +15,7 @@
 
 /* Buttons */
 #signInButton {
-    -fx-background-color: #008562;
+    -fx-background-color: #0bab64;
     -fx-border-width: 0;
     -fx-background-radius: 10px;
     -fx-font-weight: bold;
@@ -27,37 +27,37 @@
     -fx-background-color: transparent;
     -fx-font-size: 14px;
     -fx-font-weight: bold;
-    -fx-text-fill: #008562;
+    -fx-text-fill: #0bab64;
     -fx-underline: true;
 }
 
 #signInButton:hover {
-    -fx-background-color: #339D81;
+    -fx-background-color: #0f9555;
     -fx-cursor: hand;
 }
 
 #signUpButton:hover {
     -fx-cursor: hand;
-    -fx-text-fill: #339D81;
+    -fx-text-fill: #0f9555;
 }
 
 #signInButton:pressed {
-    -fx-background-color: #008562;
+    -fx-background-color: #0d6c3e;
 }
 
 #signUpButton:pressed {
-    -fx-text-fill: #008562;
+    -fx-text-fill: #0d6c3e;
 }
 
 /* Labels */
 #signUpLabel {
-    -fx-text-fill: #1e1919;
+    -fx-text-fill: #ffffff;
     -fx-font-weight: bold;
     -fx-font-size: 14px;
 }
 
 #errorLabel {
-    -fx-text-fill: red;
+    -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-font-size: 14px;
 }

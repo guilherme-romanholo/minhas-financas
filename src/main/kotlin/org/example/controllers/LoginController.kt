@@ -8,8 +8,7 @@ import org.example.models.dto.UserDTO
 import tornadofx.*
 
 class LoginController : Controller() {
-    fun verifyLoginInfos(username: String, password: String, errorLabel: Label): Int {
-        var id = -1;
+    fun verifyLoginInfos(username: String, password: String, errorLabel: Label): UserDTO? {
         val userDAO = UserDAO()
         val userDTO = userDAO.authenticateUser(username, password)
 
@@ -18,10 +17,8 @@ class LoginController : Controller() {
             val pause = PauseTransition(Duration.seconds(3.0))
             pause.setOnFinished { errorLabel.isVisible = false }
             pause.play()
-        } else {
-            id = userDTO.getId()
         }
 
-        return id
+        return userDTO
     }
 }

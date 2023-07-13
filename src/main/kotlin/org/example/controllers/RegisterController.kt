@@ -24,8 +24,6 @@ class RegisterController : Controller(){
         val userDAO = UserDAO()
         var error = false
 
-        errorLabel.textFill = Paint.valueOf("FF0000")
-
         if (username == "" || password == "") {
             errorLabel.text = "Empty fields!"
         }
@@ -37,7 +35,6 @@ class RegisterController : Controller(){
         }
         else {
             errorLabel.text = "Successfully registered!"
-            errorLabel.textFill = Paint.valueOf("008562")
             error = true
         }
 

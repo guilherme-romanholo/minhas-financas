@@ -16,11 +16,11 @@
 }
 
 #registerPanel {
-    -fx-background-color: #d9d9d9;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgba(11,171,100,1), rgba(5,93,78,1));
 }
 
 #registerButton {
-    -fx-background-color: #008562;
+    -fx-background-color: #0bab64;
     -fx-border-width: 0;
     -fx-background-radius: 10px;
     -fx-font-weight: bold;
@@ -29,27 +29,28 @@
 }
 
 #registerButton:hover {
-    -fx-background-color: #339D81;
+    -fx-background-color: #0f9555;
     -fx-cursor: hand;
 }
 
 #registerButton:pressed {
-    -fx-background-color: #008562;
+    -fx-background-color: #0d6c3e;
 }
 
 #registerTitle {
     -fx-font-size: 20px;
     -fx-font-weight: bold;
-    -fx-text-fill: #008562;
+    -fx-text-fill: #ffffff;
 }
 
 #registerSubTitle {
+    -fx-text-fill: #ffffff;
     -fx-font-weight: bold;
 }
 
 #errorLabel {
     -fx-font-weight: bold;
-    -fx-text-fill: red;
+    -fx-text-fill: white;
 }
 
 .stack-pane > Group {

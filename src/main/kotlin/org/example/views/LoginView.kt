@@ -27,9 +27,9 @@ class LoginView : View("Login") {
 
     init {
         signInButton.setOnAction {
-            val id = controller.verifyLoginInfos(usernameField.text, passwordField.text, errorLabel)
-            if (id != -1) {
-                replaceWith(MainView(id), sizeToScene = true)
+            val userDTO = controller.verifyLoginInfos(usernameField.text, passwordField.text, errorLabel)
+            if (userDTO != null) {
+                replaceWith(MainView(userDTO), sizeToScene = true)
             }
         }
         signUpButton.setOnAction {
